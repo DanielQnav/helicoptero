@@ -26,7 +26,7 @@ $(document).ready(function () {
     });
     $('#centrar').click(function (e) { 
         e.preventDefault();
-        $('.imagen').animate({top: '120px', left: '0px'});
+        $('.imagen').animate({top: '0px', left: '0px'});
         myaudio.pause();
     });
 
@@ -56,5 +56,14 @@ $(document).ready(function () {
         $('.imagen').hide(4);
         myaudio.pause();
     });
+
+    $(document).ready(function () {
+        function reorient(e) {
+          var landscape = (window.orientation % 180 == 0);
+          $("body > div").css("-webkit-transform", !landscape ? "rotate(-90deg)" : "");
+        }
+        window.onorientationchange = reorient;
+        window.setTimeout(reorient, 0);
+      });
     
 });
