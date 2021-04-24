@@ -1,4 +1,4 @@
-#container { display:block; }
+/*#container { display:block; }
          @media only screen and (orientation:portrait){
             #container {  
                   -webkit-transform: rotate(90deg);
@@ -18,3 +18,31 @@
                   transform: rotate(0deg);
                  }
          }
+
+
+    @media only screen and (orientation: portrait) and (max-width: 555px) {
+    #container {
+    transform: rotate(90deg);
+    width: calc(155%);}
+    .container.fluid {
+    width: calc(155%);
+    }
+  }*/
+
+  .controles{
+    width: 80px;
+    height: 50px;
+}
+.tamaño{
+    width: 80px;
+}
+.imagen{
+    vertical-align:super;
+    position:relative;
+    
+    height: 80%;
+    width: 100%;
+}
+#centrar{
+    width: 50px;
+}
