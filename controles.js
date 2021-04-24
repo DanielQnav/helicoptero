@@ -57,13 +57,13 @@ $(document).ready(function () {
         myaudio.pause();
     });
 
-    $(document).ready(function () {
+    /*$(document).ready(function () {
         function reorient(e) {
           var landscape = (window.orientation % 180 == 0);
           $("body > div").css("-webkit-transform", !landscape ? "rotate(-90deg)" : "");
         }
         window.onorientationchange = reorient;
         window.setTimeout(reorient, 0);
-      });
+      });*/
     
 });
